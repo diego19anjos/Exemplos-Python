@@ -1,7 +1,7 @@
 capacidade_maxima = int(input("Informe a capacidade máxima do restaurante: "))
 soma_clientes = 0
 
-while True:
+while True:     
     print("\nOpções:")
     print("1. Registrar chegada de clientes")
     print("2. Verificar se o restaurante está lotado")
@@ -11,7 +11,10 @@ while True:
 
     if opcao == "1":
         clientes = int(input("Informe o número de clientes que chegaram: "))
-        soma_clientes += clientes
+        if clientes > capacidade_maxima:
+            print("Não há lugares suficiente!!")
+        else:
+            soma_clientes += clientes
     elif opcao == "2":
         if soma_clientes >= capacidade_maxima:
             print("Restaurante lotado, não há mais mesas disponíveis")
