@@ -5,7 +5,7 @@ saldo_disponivel = 1000.00  # Suponha que há R$ 1000 de saldo disponível
 valor_saque = float(input("Digite o valor que deseja sacar: R$"))
 
 # Verificar se o valor de saque é menor ou igual ao saldo disponível
-if valor_saque <= saldo_disponivel:
+if valor_saque < saldo_disponivel:
     # Se o saldo for suficiente, realizar o saque
     saldo_disponivel -= valor_saque
     print(f"Saque de R${valor_saque:.2f} realizado com sucesso.")
