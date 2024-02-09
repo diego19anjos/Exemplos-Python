@@ -10,10 +10,10 @@ dentro_intervalo=0
 for i in range(n):
     num = int(input(f"Digite o {i + 1}º número: "))
 
-    if 10 >= num >= 20:
-        fora_intervalo += 1
-    else:
+    if num >= 10 and num <= 20:
         dentro_intervalo += 1
+    else:
+        fora_intervalo += 1
 
 print(f"Número dentro do intervalo {dentro_intervalo}")
 print(f"Número fora do intervalo {fora_intervalo}")

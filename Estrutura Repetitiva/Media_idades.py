@@ -8,8 +8,8 @@ idade = int(input())
 while idade > 0:
     soma += idade
     cont += 1
-    idade = int(input())
-
+    
+idade = int(input())
 if cont == 0:
     print("IMPOSSIVEL CALCULAR")
 else:

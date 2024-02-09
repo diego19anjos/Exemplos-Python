@@ -8,9 +8,9 @@ N = int(input("Quantos casos de teste serão digitados? "))
 
 for i in range(N):
     qte = int(input("Quantidade de cobaias: "))
-    tipoCobaia = input("Tipo de cobaia: ")
+    tipoCobaia = input("Tipo de cobaia: ").lower
 
-    if tipoCobaia == "R" or tipoCobaia == "r":
+    if tipoCobaia == "r":
         totalRatos += qte
     elif tipoCobaia == "S" or tipoCobaia == "s":
         totalSapos += qte

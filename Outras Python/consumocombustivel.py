@@ -4,8 +4,9 @@
 
 # CONSUMO    |  (Km/l)   |      MENSAGEM
 # menor que  |  8        |    Venda o carro!
-# entre      |  8 e 14   |      Economico! ˆ
+# entre      |  8 e 14   |      Economico! 
 # maior que  |  12       |   Super economico!
+
 
 
 km_percorridos = float(input("Digite a distância percorrida em km: "))

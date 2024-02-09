@@ -5,7 +5,8 @@ while True:
     print("\nOpções:")
     print("1. Registrar chegada de clientes")
     print("2. Verificar se o restaurante está lotado")
-    print("3. Sair")
+    print("3. Resgistrar saida de clientes")
+    print("4. Sair")
     
     opcao = input("Escolha uma opção: ")
 
@@ -21,6 +22,9 @@ while True:
         else:
             print("Ainda há mesas disponíveis.")
     elif opcao == "3":
+        clientes = int(input("informe o numero de clientes que sairam: "))
+        soma_clientes -= clientes        
+    elif opcao == "4":
         print("Saindo do programa.")
         break
     else:

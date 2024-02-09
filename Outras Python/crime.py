@@ -8,6 +8,7 @@
 # Se a pessoa responder positivamente a 2 questões ela deve ser classificada como "Suspeita", 
 # entre 3 e 4 como "Cúmplice" e 5 como "Assassino". Caso contrário, ele será classificado como "Inocente".
 
+
 print("Responda às perguntas com 'sim' ou 'não'.")
 
 pergunta1 = input("Telefonou para a vítima? ").lower()
@@ -23,11 +24,11 @@ if pergunta1 == 'sim':
 if pergunta2 == 'sim':
     respostas_positivas += 1
 if pergunta3 == 'sim':
-    respostas_positivas += 1
+    respostas_positivas = respostas_positivas + 1
 if pergunta4 == 'sim':
-    respostas_positivas += 1
+    respostas_positivas = respostas_positivas + 1
 if pergunta5 == 'sim':
-    respostas_positivas += 1
+    respostas_positivas = respostas_positivas + 1
 
 if respostas_positivas == 2:
     print("Você é classificado como 'Suspeita'.")
